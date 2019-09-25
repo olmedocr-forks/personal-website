@@ -5,9 +5,7 @@ published: true
 
 After spending countless hours trying to make JavaScript/CoffeeScript work under Turbolinks, here's my solution to add JavaScript code (with Materialize components) that gets executed every time the page is loaded. Since maybe there's more people out there using Ruby on Rails with Materialize too, the following examples will show how to initialize and destroy Materialized components, but this solution also applies to the use of JQuery under Turbolinks.
 
-# Highlighter
-## CoffeScript
-```coffescript
+```coffeescript
 $(document).on 'turbolinks:load', ->
   # Setup sidenav
   $('.sidenav').sidenav()
@@ -15,9 +13,7 @@ $(document).on 'turbolinks:load', ->
   return
 ```
 
-# Highlighter
-## CoffeScript
-```coffescript
+```coffeescript
 $(document).on 'turbolinks:before-cache', ->
   # Destroy sidenav
   sidenav = $('.sidenav')
