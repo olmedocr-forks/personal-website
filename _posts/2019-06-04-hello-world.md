@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my portfolio!"
-published: true
+published: false
 ---
 
 **Hello world**, this is my first Jekyll blog post deployed in Netlify!.
